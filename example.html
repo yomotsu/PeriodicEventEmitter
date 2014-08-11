@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>=^.^=</title>
+</head>
+<body>
+
+<script src="PeriodicEventEmitter.js"></script>
+<script>
+
+var period1000 = new PeriodicEventEmitter( 1000 );
+
+period1000.addEventListener( 'period', function () {
+
+  console.log( 'fire', this.count, this.elapsedTime );
+
+} );
+
+</script>
+</body>
+</html>
